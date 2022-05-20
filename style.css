@@ -1,0 +1,135 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80%;
+}
+
+.box {
+  background-color: #F5F7FA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20em;
+  width: 48%;
+  border: none;
+  border-radius: 5px;
+  padding: 2em 5em;
+  position: absolute;
+  right: 21.8%;
+  bottom:13%;
+  display: none;
+  justify-content: center;
+  align-content: center;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-btn button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.right-btn button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.left-btn {
+  text-align: center;
+  margin-right: 1.5em;
+}
+
+.right-btn {
+  text-align: center;
+  margin-left: 1.5em;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  width: 50%;
+  height: 300px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  /* position: absolute; */
+  /* width: 50%; */
+  width: 100%;
+  height: 20%;
+  transition: all 0.5s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100%;
+  border: 2px solid #C4C4C4;
+  transform: translateX(0%);
+}
+
+:root {
+  --display: none;
+}
+
+.slide::before {
+  content: '';
+  display: var(--display) !important;
+  position: absolute;
+  top: -2em;
+  left: 40%;
+  text-align: center;
+  width: 2px;
+  height: 0px;
+  border-left: 0px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #F5F7FA ;
+  
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+.slide p{
+  position: absolute;
+  top: 90%;
+  color: #000;
+}
+.box_hover{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.col_img{
+  height: 200px;
+  width: 500px;
+}
+.col_img img{
+  width: 100%;
+  height: 100%;
+}
+.col_content{
+  margin-right: 6em;
+  text-align: right;
+}
