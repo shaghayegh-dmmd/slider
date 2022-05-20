@@ -1,0 +1,29 @@
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    margin: 1em;
+    position: relative;
+}
+.col img{
+    width: 100%;
+}
+.container_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.col p{
+    position: absolute;
+    font-size: 15px;
+    top: 80%;
+}
+
