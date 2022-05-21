@@ -7,33 +7,37 @@
 
   let slideIndex = 0;
   let maxIndex = slides.length - 1;
-
-
+  window.onload = () => {
+  slides.forEach((slide, index) => {
+    slide.style.transform = `translateX(${60 * (index)}px)`;
+    nextBtn.style.opacity="50%";
+  })
+}
   nextBtn.addEventListener("click", () => {
 
-    if (slideIndex === maxIndex) {
+    if (slideIndex === 0) {
       nextBtn.style.opacity="50%";
     } else {
-      slideIndex++;
+      slideIndex--;
       backBtn.style.opacity="100%";
     }
 
     slides.forEach((slide, index) => {
-      slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
+      slide.style.transform = `translateX(${60 * (index - slideIndex)}px)`;
     })
   })
 
   backBtn.addEventListener("click", () => {
 
-    if (slideIndex === 0) {
+    if (slideIndex === maxIndex) {
       backBtn.style.opacity="50%";
     } else {
-      slideIndex--;
+      slideIndex++;
       nextBtn.style.opacity="100%";
     }
 
     slides.forEach((slide, index) => {
-      slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`
+      slide.style.transform = `translateX(${60 * (index - slideIndex)}px)`
     })
   })
 
