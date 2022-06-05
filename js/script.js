@@ -116,6 +116,6 @@ slides.forEach((slide, index) => {
     boxs[index].style.display = "none";
     slide.style.setProperty("--display", "none");
     slide.style.border = "1px solid #C4C4C4";
-    
+    contentbox(counter_box);
   })
 })
