@@ -12,19 +12,18 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 80%;
 }
 
 .box {
   background-color: #F5F7FA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 20em;
-  width: 48%;
+  width: 100%;
   border: none;
   border-radius: 5px;
   padding: 2em 5em;
   position: absolute;
-  right: 21.8%;
+  right:0;
   bottom:13%;
   display: none;
   justify-content: center;
@@ -38,7 +37,7 @@ body {
   justify-content: center;
 }
 
-.left-btn button{
+.left-btn_hover button{
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -48,7 +47,7 @@ body {
   background-color: transparent;
   border: none;
 }
-.left-btn {
+.left-btn_hover {
   text-align: center;
   margin-right: 1.5em;
 }

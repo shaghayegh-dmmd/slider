@@ -2,7 +2,7 @@
 
 let slides = document.querySelectorAll(".slide");
 let nextBtn = document.querySelector(".btn-right");
-let backBtn = document.querySelector(".btn-left");
+let backBtn = document.querySelector(".btn-left_hover");
 let boxs = document.querySelectorAll(".box");
 let sliders = document.querySelector(".slider")
 
